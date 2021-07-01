@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  type: 
+  value: 1
+  date: MyString
+  store: MyString
+  giftcard: one
+
+two:
+  type: 
+  value: 1
+  date: MyString
+  store: MyString
+  giftcard: two
