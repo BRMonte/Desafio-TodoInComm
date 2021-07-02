@@ -4,7 +4,7 @@ class DeviseCreateGiftcards < ActiveRecord::Migration[5.2]
   def change
     create_table :giftcards do |t|
       ## Database authenticatable
-      t.string :email,              null: false, default: ""
+      t.string :number,              null: false, default: ""
       t.string :encrypted_password, null: false, default: ""
 
       ## Recoverable
@@ -36,7 +36,7 @@ class DeviseCreateGiftcards < ActiveRecord::Migration[5.2]
       t.timestamps null: false
     end
 
-    add_index :giftcards, :email,                unique: true
+    add_index :giftcards, :number,                unique: true
     add_index :giftcards, :reset_password_token, unique: true
     # add_index :giftcards, :confirmation_token,   unique: true
     # add_index :giftcards, :unlock_token,         unique: true

@@ -1,7 +1,11 @@
 Rails.application.routes.draw do
-  get 'transactions/index'
-  get 'transactions/show'
-  get 'home/index'
-  devise_for :giftcards
-  root to: "home#index"
+
+  resources :transactions, only: [:index]
+
+  root to: 'home#index'
+
+  devise_for :giftcards, controllers: {
+    sessions: 'giftcards/sessions'
+  }
+
 end
