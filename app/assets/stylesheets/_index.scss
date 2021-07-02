@@ -1,0 +1,78 @@
+/* Split the screen in half */
+.giftcard-container {
+  width: 80%;
+  margin: 0 auto;
+  height: 470px;
+  border: 2px solid orange;
+  position: fixed;
+  top: 10%;
+  left: 15%;
+  background-color: white;
+  display: flex;
+  text-align: center;
+}
+
+.giftcard-infos {
+  width: 50%;
+
+  h1 {
+    padding-top: 10px;
+    vertical-align:middle;
+    margin:auto;
+  }
+}
+
+.card-giftcard {
+  width: 80%;
+  height: 30%;
+  border-radius: 20px;
+  margin-left: 10%;
+  margin-top: 20%;
+}
+
+.giftcard-bg {
+  width: 80%;
+}
+
+.infos {
+  margin: 0 auto;
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.transaction-infos {
+  width: 90%;
+  h1 {
+    padding-top: 10px;
+    vertical-align:middle;
+    margin:auto;
+  }
+}
+
+.customTable {
+  width: 100%;
+  padding-left: 20px;
+  background-color: #FFFFFF;
+  border-collapse: collapse;
+  border-width: 2px;
+  border-color: #7ea8f8;
+  border-style: solid;
+  color: #000000;
+  margin-left: 0;
+  margin-top: 10%;
+  border-radius: 5px;
+}
+
+.customTable td, .customTable th {
+  border-width: 2px;
+  border-color: #7ea8f8;
+  border-style: solid;
+  padding: 5px;
+}
+
+.customTable thead {
+  background-color: #7ea8f8;
+}

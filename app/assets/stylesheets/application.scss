@@ -1,0 +1,17 @@
+// @import "bootstrap";
+// @import "font-awesome";
+@import "home";
+@import "navbar";
+@import "footer";
+@import "login-card";
+@import "index";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  font-family: 'segoe ui';
+  background-image: url("https://blog.prezi.com/wp-content/uploads/2019/03/jason-leung-479251-unsplash-1024x683.jpg");
+}
