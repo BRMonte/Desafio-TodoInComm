@@ -1,2 +1,44 @@
-<h1>Transactions#index</h1>
-<p>Find me in app/views/transactions/index.html.erb</p>
+<div class="giftcard-container">
+  <div class="giftcard-infos">
+
+    <h1>Meu Giftcard</h1>
+
+    <div class="card-giftcard">
+      <img class="giftcard-bg" src="https://cdn.shopify.com/s/files/1/0088/8589/5225/products/fee525424486bc85c5d5d1bf1c0f05a7_800x.jpg?v=1591457014" alt="">
+    </div>
+
+    <div class="infos">
+      <h3>Informaçōes</h3>
+      <ul>
+        <li>Numero do cartão: <%= current_giftcard.number %></li>
+        <li>Mensagem: <%= current_giftcard.message %></li>
+        <li>Saldo: <%= @balance %></li>
+        <li>Validade: <%= current_giftcard.expiration.strftime('%m/%y') %></li>
+      </ul>
+    </div>
+
+  </div>
+  <div class="transaction-infos">
+    <h1>Minhas transaçoes</h1>
+    <table class="customTable">
+      <thead>
+        <tr>
+          <th>Tipo</th>
+          <th>Data</th>
+          <th>Valor</th>
+          <th>Identificacao</th>
+        </tr>
+      </thead>
+      <tbody>
+      <% @transactions.each do |transaction| %>
+        <tr>
+          <td><%= transaction["transaction_type"] %></td>
+          <td><%= transaction["transaction_value"] %></td>
+          <td><%= transaction["transaction_date"] %></td>
+          <td><%= transaction["store_identification"] %></td>
+        </tr>
+      <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>
